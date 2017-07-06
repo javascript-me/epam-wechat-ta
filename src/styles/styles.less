@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'Oswald';
+    src:url('../fonts/Oswald-Bold.ttf');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:'SourceSansPro';
+    src:url('../fonts/SourceSansPro-Regular.otf');
+    font-style: normal;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+html, body, #app {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    opacity: .5;
+}
+
+
+@import "../components/home/jobList/JobList.less";
+@import "../components/jobDetail/jobDetailPage.less";
+@import "../components/common/card/JobCard.less";
+@import "../components/home/HomePage.less";
+@import "../components/home/advertisement/Advertisement.less";
+@import "../components/common/hotTriangle/HotTriangle.less";
+

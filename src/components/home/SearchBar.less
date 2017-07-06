@@ -1,0 +1,65 @@
+.search-bar {
+    position: relative;
+}
+
+.search-bar__wrapper {
+    width: 100%;
+    height: 40px;
+    background-color: #fafafa;
+    padding: 11px;
+    position: absolute;
+    z-index: 1050;
+}
+
+.search-bar__location, .search-bar__role {
+    display: inline-block;
+    color: #999999;
+    font-family: SourceSansPro;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.SearchBar__role--active {
+    color: #39C3D8;
+}
+
+.search-bar__location {
+    margin-right: 22px;
+}
+
+.search-bar__arrow-down, .search-bar__arrow-up {
+    margin-left: 3px;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.search-bar__arrow-down {
+    background: url(../../images/chevron-down.svg) no-repeat;
+
+}
+
+.search-bar__arrow-up {
+    background: url(../../images/chevron-up.svg) no-repeat;
+}
+
+.search-bar__search, .search-bar__view {
+    float: right;
+}
+
+.search-bar__view {
+    margin-left: 16px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.search-bar__view-list {
+     background: url(../../images/list-mode.svg) no-repeat;   
+}
+
+.search-bar__view-card {
+     background: url(../../images/card-mode.svg) no-repeat;   
+}

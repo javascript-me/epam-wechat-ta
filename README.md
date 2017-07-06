@@ -1,1 +1,1 @@
-# epam-wechat-ta
+# Frontend source code for WeChat Talent Aquisition project
