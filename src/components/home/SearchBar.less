@@ -6,26 +6,32 @@
     width: 100%;
     height: 40px;
     background-color: #fafafa;
-    padding: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: absolute;
     z-index: 1050;
 }
 
-.search-bar__location, .search-bar__role {
+.searchMode .search-bar__wrapper {
+  height: 80px;
+}
+
+.search-bar__location, .search-bar__role, .search-bar__sort {
+    margin-top: 10px;
     display: inline-block;
     color: #999999;
     font-family: SourceSansPro;
-    font-size: 14px;
+    font-size: 80%;
     font-weight: 600;
 
 }
 
-.SearchBar__role--active {
+.search-bar__role--active, .search-bar__location--active {
     color: #39C3D8;
 }
 
 .search-bar__location {
-    margin-right: 22px;
+    margin-right: 16px;
 }
 
 .search-bar__arrow-down, .search-bar__arrow-up {
@@ -46,20 +52,76 @@
 }
 
 .search-bar__search, .search-bar__view {
+    margin-top: 10px;
     float: right;
+    width: 30px;
+    height: 20px;
+    background: url(../../images/web-search.svg) no-repeat;
+    background-size: contain;
 }
 
 .search-bar__view {
-    margin-left: 16px;
+    margin-left: 10px;
     width: 20px;
     height: 20px;
     display: inline-block;
 }
 
 .search-bar__view-list {
-     background: url(../../images/list-mode.svg) no-repeat;   
+     background: url(../../images/list-mode.svg) no-repeat;
 }
 
 .search-bar__view-card {
-     background: url(../../images/card-mode.svg) no-repeat;   
+     background: url(../../images/card-mode.svg) no-repeat;
+}
+
+.search-bar__field {
+    margin-top: 4px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    border:  1px solid #999999;
+    display: inline-block;
+    width: 83%;
+
+}
+
+.search-bar__input {
+    border: none;
+    height: 28px;
+    width: 85%;
+    margin-left: 10px;
+}
+
+.search-bar__close {
+    width: 20px;
+    height: 20px;
+    background: url(../../images/search-close.svg) no-repeat;
+    vertical-align: middle;
+    display: hidden;
+}
+
+.search-bar__close--show {
+  display: inline-block;
+}
+
+.search-bar__back {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background: url(../../images/chevron-right.svg) no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.search-bar__sort {
+  float: right;
+}
+
+.search-bar__sort-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../../images/sort.svg) no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
 }

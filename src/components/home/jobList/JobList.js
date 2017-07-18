@@ -2,18 +2,19 @@ import React from 'react';
 import GridJobCard from '../../common/card/GridJobCard.js';
 import VerticalJobCard from '../../common/card/VerticalJobCard.js';
 import ClassNames from 'classnames';
-import {JobCardMode} from '../../common/card/Const.js';
+import {
+  JobCardMode
+} from '../../common/card/Const.js';
 
 
 export default class JobList extends React.Component {
 
-    getOpeningListClassNames () {
-        return ClassNames(
-            "opening-list", 
-            this.props.listStyleMode
-        );
-    }
-
+  getOpeningListClassNames() {
+    return ClassNames(
+      "opening-list",
+      this.props.listStyleMode
+    );
+  }
 
     render () {
         return (<div>
@@ -43,6 +44,6 @@ export default class JobList extends React.Component {
 }
 
 JobList.propTypes = {
-    data: React.PropTypes.array, 
-    listStyleMode: React.PropTypes.oneOf([JobCardMode.VERTICAL, JobCardMode.GRID])
+  data: React.PropTypes.array,
+  listStyleMode: React.PropTypes.oneOf([JobCardMode.VERTICAL, JobCardMode.GRID])
 };

@@ -3,7 +3,7 @@ import Role from './Role';
 
 const RoleList  = ({roles, addRoles}) => {
     return (
-        <ul className = "roles__wrapper"> 
+        <ul className = "roles__list">
             {roles.map( r => <Role key={r.id} role = {r} addRoles = {addRoles}/>)}
         </ul>
     );

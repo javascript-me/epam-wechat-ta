@@ -1,4 +1,5 @@
 import React from 'react';
+import {browserHistory} from 'react-router';
 import ClassNames from 'classnames';
 import {JobCardMode} from './Const.js';
 import HotTriangle from '../hotTriangle/HotTriangle.js';
@@ -11,12 +12,12 @@ export default class JobCard extends React.Component {
     }
 
     handleClick () {
-        window.location.href = '/job/' + this.props.id;
+        browserHistory.push(`/job/${this.props.id}`);
     }
 
     getOpeningWidgetClassNames () {
         return ClassNames(
-            'job-card', 
+            'job-card',
             this.props.mode
         );
     }
@@ -47,7 +48,7 @@ export default class JobCard extends React.Component {
 
     render () {
         return (<div className={this.getOpeningWidgetClassNames()}
-            style={this.getPanelBackgroundColor()} 
+            style={this.getPanelBackgroundColor()}
             onClick={this.handleClick}>
             {
                 this.renderDepartmentLogo()
@@ -74,12 +75,12 @@ export default class JobCard extends React.Component {
 }
 
 JobCard.propTypes = {
-    title: React.PropTypes.string, 
-    location: React.PropTypes.string, 
+    title: React.PropTypes.string,
+    location: React.PropTypes.string,
     isHot: React.PropTypes.bool,
-    department: React.PropTypes.string, 
-    id: React.PropTypes.number, 
-    mode: React.PropTypes.oneOf([JobCardMode.VERTICAL, JobCardMode.GRID, JobCardMode.GRID_WITH_APPLY_BUTTON]), 
+    department: React.PropTypes.string,
+    id: React.PropTypes.number,
+    mode: React.PropTypes.oneOf([JobCardMode.VERTICAL, JobCardMode.GRID, JobCardMode.GRID_WITH_APPLY_BUTTON]),
     color: React.PropTypes.string
 };
 

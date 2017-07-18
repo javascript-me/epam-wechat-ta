@@ -1,4 +1,5 @@
 import React from 'react';
+import {browserHistory} from 'react-router';
 import JobCard from './JobCard.js';
 import locationLogo from './locationLogo.svg';
 
@@ -6,11 +7,11 @@ export default class GridWithApplyButtonJobCard extends JobCard {
 
     constructor (props) {
         super(props);
-        this.applyJob = this.applyJob.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    applyJob () {
-        window.location.href = '/apply/' + this.props.id;
+    handleClick () {
+        browserHistory.push(`/apply/${this.props.id}`);
     }
 
     renderRole () {
@@ -22,10 +23,6 @@ export default class GridWithApplyButtonJobCard extends JobCard {
     }
 
     renderSubmitButton () {
-        return <div className="button submit" onClick={this.applyJob}>Apply Now</div>;
+      return <div className="button submit" onClick={this.handleClick}>Apply Now</div>;
     }
-
-    handleClick () {
-    }    
-    
 }
