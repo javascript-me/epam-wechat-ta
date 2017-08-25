@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#2564A9" stroke-width="4" d="M2 2h44v44H2z"/>
+        <text fill="#2564A9" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="36" font-weight="500">
+            <tspan x="9.654" y="35">W</tspan>
+        </text>
+    </g>
+</svg>

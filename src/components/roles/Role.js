@@ -23,14 +23,14 @@ class Role extends Component{
     }
 
     showDeleteIcon() {
-        return this.state.selected ? (<img src={deleteIcon} alt="delete icon"/>) : ''; 
+        return this.state.selected ? (<img src={deleteIcon} alt="delete icon"/>) : '';
     }
 
     render() {
         const {role}  = this.props;
 
-        return ( <li className = {classNames("roles__item", {'role__selected': this.state.selected})} 
-                         onClick = {this.toggleSelection} > 
+        return ( <li className = {classNames("roles__item", {'role__selected': this.state.selected})}
+                         onClick = {this.toggleSelection} >
                     {role.name} {this.showDeleteIcon()}
                 </li>);
 

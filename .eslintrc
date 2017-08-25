@@ -5,10 +5,11 @@
     "plugin:import/warnings"
   ],
   "plugins": [
-    "react"
+    "react",
+    "async-await"
   ],
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2017,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -79,6 +80,8 @@
     "react/require-extension": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/wrap-multilines": 1
+    "react/wrap-multilines": 1,
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2
   }
 }

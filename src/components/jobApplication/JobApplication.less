@@ -1,11 +1,11 @@
 .job-application__wrapper {
-    padding: 0 12px;
+    padding: 0 12px 40px 12px;
 }
 
 .job-application__header {
     padding-top: 18px;
     width: 100%;
-    height: 85px;
+    min-height: 85px;
     background-color: #39c2d7;
     color: #fff;
 
@@ -40,7 +40,11 @@
     text-align: left;
     color: #00c3d6;
     margin-bottom: 8px;
-} 
+}
+
+.job-form__upload {
+  position: relative;
+}
 
 .job-form__upload > .job-form__input{
     display: none;
@@ -48,4 +52,65 @@
 
 .job-application__btn {
     display: inline-block;
+}
+
+.job-form__details, .job-form__file-info {
+  display: inline-block;
+  vertical-align: top;
+  font-family: SourceSansPro;
+
+}
+
+.job-form__file-info {
+  max-width: 140px;
+  height: 48px;
+  position: relative;
+}
+
+ .job-form__filename, .job-form__filesize {
+   display: block;
+ }
+
+ .job-form__filename, .job-form__filesize{
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  }
+
+.job-form__filename {
+  color: #464547;
+  margin-bottom: 2px;
+  }
+
+.job-form__filesize {
+    color: #ababab;
+    position: absolute;
+    bottom: 0;
+}
+
+.job-form__thumbnail {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 12px;
+  margin-right: 8px;
+
+  &.pdf {
+    background-image: url(../../images/pdf.svg);
+  }
+
+  &.doc {
+    background-image: url(../../images/doc.svg);
+  }
+}
+
+.job-form__close {
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    border: 0;
+    background: #fff url(../../images/close.svg) no-repeat;
 }
